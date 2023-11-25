@@ -10,19 +10,14 @@
  * */
 void print_index(){
     system("clear");
-    short int WIDTH = 80;
-    char border[WIDTH];
-    for (short int i = 0; i < WIDTH; i++){
-        border[i] = '=';
-    }
-    printf("%s\n", border);
-    printf("*\t\t\t\t1. 查询学生列表\t\t\t\t       *\n");
-    printf("*\t\t\t\t2. 添加学生信息\t\t\t\t       *\n");
-    printf("*\t\t\t\t3. 修改学生信息\t\t\t\t       *\n");
-    printf("*\t\t\t\t4. 删除学生信息\t\t\t\t       *\n");
-    printf("*\t\t\t\t5. 搜索学生信息\t\t\t\t       *\n");
-    printf("*\t\t\t\t6. 退出程序  \t\t\t\t       *\n");
-    printf("%s\n", border);
+    printf("========================================================\n");
+    printf("|%*s%s%*s|\n", 20, "", "1.查询学生列表", 20, "");
+    printf("|%*s%s%*s|\n", 20, "", "2.添加学生信息", 20, "");
+    printf("|%*s%s%*s|\n", 20, "", "3.修改学生信息", 20, "");
+    printf("|%*s%s%*s|\n", 20, "", "4.删除学生信息", 20, "");
+    printf("|%*s%s%*s|\n", 20, "", "5.搜索学生信息", 20, "");
+    printf("|%*s%s%*s|\n", 22, "", "6.退出程序", 22, "");
+    printf("=======================================================\n");
     dispatch_request();
 }
 
